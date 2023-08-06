@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+/*
+C Program to display the String using various String Functions
+MAXlength function
+By:-AYS
+*/
+
+int main() {
+
+  char string1[20] = "ScalerAcademy";
+  printf("Length of string string1 when maxlen is 25: %ld \n", strnlen(string1, 25));
+  printf("Length of string string1 when maxlen is 5: %ld", strnlen(string1, 5));
+}
