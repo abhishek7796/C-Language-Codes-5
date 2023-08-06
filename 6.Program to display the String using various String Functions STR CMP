@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+/*
+C Program to display the String using various String Functions
+STR CMP
+By:-AYS
+*/
+
+int main () {
+ char str1[12] = "WELCOME";
+ char str2[12] = " TO C";
+ strcat( str1, str2);
+ printf("The Concatenated String is : %s",str1);
+}
