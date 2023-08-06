@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+
+/*
+Tower of Honai in C
+By:- AYS
+*/
+
+int hanoi(int, char, char, char); //function declaration
+
+int main()
+{
+int num;
+
+printf("\nEnter the number of Disks: ");
+scanf("%d",&num);
+
+printf("\nTOWER OF HANOI FOR %d NUMBER OF DISKS\n\n", num);
+hanoi (num,'A','B','C'); //function call
+}
+
+int hanoi (int n, char source, char dest, char helper_t)
+{
+if(n==0)
+{
+return 0;
+}
+hanoi(n-1, source, helper_t, dest);
+printf("Move Disc %d from Tower %c to Tower %c\n", n, source, dest);
+hanoi (n-1, helper_t, dest, source);
+}
